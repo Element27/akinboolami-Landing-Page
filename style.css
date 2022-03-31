@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-size: 62.5%; */
+    font-size: 10px;
+  }
+  
+  /*
+  #000028 
+  #CCCCFF
+  #1E00E0
+  */
+  
+  body {
+    background-color: #000028;
+  }
+
+  
+.container {
+    height: fit-content;
+    margin: auto auto;
+    padding: 1rem;
+  }
+  
+/* box fixed to the right of the page */
+.info-container {
+    background-color: #ccccff;
+    height: fit fit-content;
+    border-radius: 0 0 5rem 5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all ease-in-out 1s;
+  }
+
+  /* styling for profile picture and name */
+  .profile {
+    margin-top: 1rem;
+  }
+
+  .identity {
+    align-items: center;
+    border-bottom: 2px solid #000028;
+  }
+  
+  .profile-pic img {
+    width: 10rem;
+    border-radius: 50%;
+    background-color: #ccccff;
+    box-shadow: 0 0 3px 3px #0000287d;
+  }
+
+  
+
+  .profile-details h3 {
+    margin: .5rem;
+    font-size: 2rem;
+  }
+
+  .profile-details h2 {
+    margin: .5rem;
+    font-size: 2.5rem;
+  }
+  
+  .profile-text {
+    font-weight: bold;
+    text-align: justify;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+.contact-me {
+    display: none;}
+
+    /* styling for the social media*/
+    .social-media {
+        justify-content: center;
+        margin-top: 1.5rem auto;
+      }
+
+      
+    
+     
+
+      /* styling for the media icons */
+      
+.social-media img {
+    margin-top: .5rem;
+    margin-left: .5rem;
+    border-right: 3px solid #000028;
+    border-radius: .5rem;
+    padding: .5rem;
+    width: 3rem;
+    background-color: #ccccff;
+  }
+
+
+
+  /* styling for the social media */
+  
+.twitter,
+.facebook,
+.linkedin ,  .email-address, .git{
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  margin: 10px;
+  height: max-content;
+  background-color: #ccccff;
+  box-shadow: 0 0 2px 2px #0000287d;
+  overflow: hidden;
+}
+
+
+.social-media a {
+    color: #000028; 
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .sm-top{
+    display: none;
+  }
+
+  
+.twitter:hover,
+.facebook:hover,
+.linkedin:hover,
+.git:hover,
+.email-address:hover {
+    transform: scale(1.1);
+  transition: all ease-in 0.3s;
+  color: #fff;
+}
+
+/* styling for portfolio content */
+      
+.portfolio-container{
+  width: fit-content;  
+  margin: auto;
+  padding: auto;
+}
+
+
+.content-container {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+
+
+.content-container .note{
+  margin: 3rem;
+}
+
+.content-container .note h1 {
+font-size: 3rem;
+  color: #fff;
+}
+
+.content-container .note p{
+  color: #ccccff;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.content-container .note em{
+  font-size: 1.5rem;
+
+}
+
+
+/* styling for the portfolio scetion begins here */
+
+.all-project{
+  width: max-content;
+  margin: auto;
+}
+
+.project {
+  width: 30rem;
+  height: 18rem;
+  margin: 1rem 2rem;
+  overflow: hidden;
+  background-color: #8080ff;
+  border-radius: 1rem;
+  position: relative;
+  transition: all ease-in-out 1.5s;
+}
+
+.project-details{
+  position: absolute;
+  z-index: 1;
+  height: fit-content;
+  background: #000028dc;
+  /* margin:auto; */
+  top:15%;
+  
+}
+
+.project-details p{
+  font-size: 1.7rem;
+  text-align: center;
+  padding: .5rem;
+  color: #fff;
+  font-weight: 100;
+  display: none;
+}
+
+
+
+.project h2{
+  height: fit-content;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+
+
+.project img {
+  width: 300px;
+  height: 180px;
+  margin: auto;
+}
+
+/* table styling */
+
+table{
+  width: 70%;
+  margin: 5rem auto;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px 5px #ccccffcd;
+
+}
+
+table td, table th{
+  width: 5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  padding: 2px 10px;
+  text-align: center; 
+}
+.no-rigth-border{
+  border-right: none;
+}
+
+.no-bottom-border{
+  border-bottom: none;
+}
+
+table td .dot{
+  width: 1rem;
+}
+table td .check{
+  width: 2rem;
+}
+
+
+
+
+/* media query */
+
+/* media query for small screen eg iphone 5 */
+@media screen and (max-width:350px){
+  .project{
+    width: 250px;
+    height: 150px;
+  }
+
+  .project img{
+    width: 250px;
+    height: 150px;
+  }
+}
+
+/* media query for tablet */
+@media screen and (min-width:600px){
+  .profile-pic img{
+    width: 15rem; 
+  }
+
+  .profile-details h2{
+    font-size: 3.5rem;
+  }
+
+  .profile-details h3{
+    font-size: 2.5rem;
+  }
+
+  .social-media img {
+    width: 4rem;
+  }
+
+}
+
+@media screen and (min-width:700px){
+  .profile-text{
+    font-size: 2rem;
+  }
+  
+  .content-container .note h1 {
+    font-size: 3.5rem;
+    }
+    
+    .content-container .note p{
+      font-size: 2rem;
+    }
+    .content-container .note em{
+      font-size: 2rem;
+    
+    }
+
+
+  .all-project{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top, .middle, .bottom {
+    display: flex;
+    margin: auto;
+  }
+}
+
+/* Media query for surface duo / large screen */
+@media screen and (min-width:1000px){
+  .main-contents{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  
+  .profile-pic img {
+    width: 10rem;
+  }
+
+  
+
+  .profile-details h3 {
+    font-size: 2rem;
+  }
+
+  .profile-details h2 {
+    font-size: 2.5rem;
+  }
+
+  .social-media a {
+    font-size: 1.5rem;
+  }
+
+  .social-media img{
+    width:3rem;
+  }
+
+
+  .sm-top{
+    display: contents;
+  }
+  .info-container{
+    width: 30rem; 
+    position: fixed;
+  }
+
+  .portfolio-container{
+    position: absolute;
+    width: 60rem;
+    left: 0;
+    /* padding: 5rem; */
+  }
+
+  .sm-footer{
+    display: none;
+  }
+
+
+}
+
+/* media query for large screen to larger screens */
+@media screen and (min-width:1050px){
+  
+  .info-container{
+    width: 35rem; 
+  }
+
+  .portfolio-container{
+    width: 62rem;
+  }
+}
+
+@media screen and (min-width:1100px){
+  
+  .social-media img{
+    width:4rem;
+  }
+
+  .info-container{
+    width: 40rem; 
+  }
+
+  .portfolio-container{
+    width: 70rem;
+  }
+}
+
+@media screen and (min-width:1200px){
+  
+  .info-container{
+    width: 45rem; 
+  }
+  .portfolio-container{
+    width: 72rem;
+  }
+
+
+}
+
+
+@media screen and (min-width:1250px){
+  
+  .info-container{
+    width: 50rem; 
+  }
+  .portfolio-container{
+    width: 80rem;
+  }
+}
+
+
+@media screen and (min-width:1300px){
+  
+  .info-container{
+    width: 50rem; 
+  }
+  .portfolio-container{
+    width: 85rem;
+  }
+}
+
+@media screen and (min-width:1400px){
+  
+  .container{
+    width: 140rem;
+    margin: auto;
+  }
+}
